@@ -1,0 +1,26 @@
+.modal-mailchimp {
+
+  .mailchimp-content {
+    @include clearfix();
+    img {
+      float: left;
+      margin-right: 10px;
+      height: 16px;
+      position: relative;
+      top: 8px;
+    }
+    p {
+      margin: 0 0 30px;
+    }
+  }
+  input[type="email"] {
+    font-family: $font-family-sans-serif;
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  .btn {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px 15px;
+  }
+}

@@ -1,0 +1,122 @@
+// press.scss
+// -----------------------------------------------------------------
+
+$press-color-1:     rgba(56,120,74,.8);
+$press-color-2:     rgba(61,107,120,.8);
+$press-color-3:     rgba(204,150,96,.8);
+$press-color-4:     rgba(196,106,92,.8);
+
+.home-press {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  .press-block {
+    width: 25%;
+    text-align: right;
+    color: #fff;
+    padding: 15px;
+    border: 7px solid rgba(0,0,0,.23);
+    border-left: 0;
+    border-right: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: background-color 100ms;
+    &:hover {
+      &:nth-child(1) {
+        background-color: darken($press-color-1, 8%);
+      }
+      &:nth-child(2) {
+        background-color: darken($press-color-2, 8%);
+      }
+      &:nth-child(3) {
+        background-color: darken($press-color-3, 8%);
+      }
+      &:nth-child(4) {
+        background-color: darken($press-color-4, 8%);
+      }
+    }
+    a {
+      color: #fff;
+    }
+    &:nth-child(1) {
+      background-color: $press-color-1;
+      background-image: url('assets/img/press-bg-1.png');
+    }
+    &:nth-child(2) {
+      background-color: $press-color-2;
+      background-image: url('assets/img/press-bg-2.png');
+    }
+    &:nth-child(3) {
+      background-color: $press-color-3;
+      background-image: url('assets/img/press-bg-3.png');
+    }
+    &:nth-child(4) {
+      background-color: $press-color-4;
+      background-image: url('assets/img/press-bg-4.png');
+    }
+    .press-title {
+      font-size: 24px;
+      line-height: 1.125em;
+      text-decoration: underline;
+      display: block;
+    }
+    .read-more-link {
+      font-family: $font-family-sans-serif;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      &:after {
+        content: '';
+        background-image: url('assets/img/icon-external-link.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 12px;
+        height: 12px;
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .press-logo {
+      max-width: 50%;
+      max-height: 54px;
+      display: block;
+      margin: 25px auto 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .home-press {
+    .press-block {
+      width: 50%;
+    }
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {
+
+  .home-press {
+    display: none;
+  }
+
+}

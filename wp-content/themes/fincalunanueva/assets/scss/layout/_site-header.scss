@@ -1,0 +1,116 @@
+// site-header.scss
+// -----------------------------------------------------------------
+
+.site-header {
+  .navbar-header {
+    .navbar-brand {
+      padding: 10px 0 0 15px;
+      .logo-mark {
+        height: 55px;
+        display: inline;
+        margin-right: 10px;
+      }
+      .logo-type {
+        display: inline;
+      }
+    }
+  }
+  .navbar-nav {
+    & > li {
+      & > a {
+        font-family: $font-family-sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+      }
+      &:last-child {
+        a {
+          @extend .btn;
+          @extend .btn-primary;
+          font-size: 14px;
+          margin: 24px 0 24px 10px;
+          padding: 3px 10px;
+        }
+      }
+    }
+    .dropdown-menu {
+      background: darken($link-color, 25%);
+      font-family: $font-family-sans-serif;
+      a {
+        color: #fff;
+        font-size: 16px;
+        &:hover {
+          background: rgba(0,0,0,.15);
+        }
+      }
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+@media (min-width: 1280px) and (max-width: 1380px) {
+
+  .site-header {
+    .navbar-header {
+      .navbar-brand {
+        padding: 7px 0 0 15px;
+        .logo-mark {
+          height: 60px;
+        }
+        .logo-type {
+          height: 30px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1279px) {
+
+  .site-header {
+    .navbar-header {
+      .navbar-brand {
+        .logo-type {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {
+
+  .site-header {
+    .navbar-header {
+      .navbar-brand {
+        padding: 15px 0 0 15px;
+        .logo-mark {
+          height: 45px;
+        }
+        .logo-type {
+          height: 25px;
+        }
+      }
+    }
+  }
+
+}

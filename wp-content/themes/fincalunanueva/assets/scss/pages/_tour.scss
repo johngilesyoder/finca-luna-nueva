@@ -1,0 +1,57 @@
+// tour.scss
+// -----------------------------------------------------------------
+
+.single-tour {
+  .post-title {
+    font-family: $font-family-display;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 0;
+    letter-spacing: 2px;
+    font-size: 52px;
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .single-tour {
+    .post-title {
+      font-size: 48px;
+    }
+  }
+
+}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .single-tour {
+    .post-title {
+      font-size: 36px;
+    }
+  }
+
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {
+
+  .single-tour {
+    .post-title {
+      font-size: 30px;
+    }
+  }
+
+}

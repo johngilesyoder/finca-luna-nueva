@@ -1,0 +1,243 @@
+// about.scss
+// -----------------------------------------------------------------
+
+.page-template-template-about {
+  padding-top: 0;
+  .bubbles {
+    position: relative;
+    .bubble {
+      border-radius: 50%;
+      background-size: cover;
+      background-position: 50% 50%;
+      position: absolute;
+    }
+    .bubble-1 {
+      height: 235px;
+      width: 235px;
+      top: -15px;
+      right: 0;
+    }
+    .bubble-2 {
+      height: 205px;
+      width: 205px;
+      top: 185px;
+      left: 0;
+    }
+  }
+  .section-founders {
+    margin: 0 0 60px;
+    h4 {
+      letter-spacing: 3.5px;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .quote-feature {
+
+    }
+  }
+  .section-regenerative {
+    margin: 0 0 80px;
+    .section-billboard {
+      padding: 200px 30px;
+      margin: 0 0 60px;
+    }
+    .regenerative-content h4 {
+      letter-spacing: 3.5px;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 30px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .definitions {
+      background: rgba(68,145,90,.16);
+      border-radius: 8px;
+      padding: 25px 30px;
+      color: #132E1B;
+      font-size: 16px;
+      position: relative;
+      &:before {
+        content: '';
+        background-image: url('assets/img/icon-info-green.svg');
+        background-size: cover;
+        height: 34px;
+        width: 34px;
+        display: block;
+        position: absolute;
+        top: -17px;
+        left: -17px;
+      }
+      .definition {
+        margin: 0 0 15px;
+        &:last-child {
+          margin: 0 ;
+        }
+      }
+      h5 {
+        color: #52A168;
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: 2.5px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .section-experience {
+    margin: 0 0 60px;
+    h4 {
+      letter-spacing: 3.5px;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 30px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .section-billboard {
+      padding: 200px 30px;
+      margin: 0 0 60px;
+    }
+  }
+  .legacy {
+    margin-top: 60px;
+    padding: 60px 0 0;
+    text-align: center;
+    h3 {
+      margin: 0 0 15px;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 3.5px;
+    }
+    .legacy-logos {
+      margin-top: 60px;
+      img {
+        height: 300px;
+        background: #fff;
+        padding: 30px;
+        border: 10px solid rgba(0,0,0,.07);
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .page-template-template-about {
+    .bubbles {
+      height: 235px;
+      margin: 50px 0;
+      .bubble-1 {
+        top: 0;
+        right: 50%;
+        margin-right: -15px;
+      }
+      .bubble-2 {
+        top: 15px;
+        left: 50%;
+        margin-left: -15px;
+      }
+    }
+    .section-regenerative {
+      .definitions {
+        margin-top: 60px;
+      }
+    }
+  }
+
+}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .page-template-template-about {
+    .bubbles {
+      height: 200px;
+      margin: 30px 0 0;
+      .bubble-1 {
+        top: 0;
+        right: 50%;
+        margin-right: -15px;
+        height: 200px;
+        width: 200px;
+      }
+      .bubble-2 {
+        top: 15px;
+        left: 50%;
+        height: 175px;
+        width: 175px;
+        margin-left: -15px;
+      }
+    }
+    .section-founders {
+      margin: 0 0 30px;
+      .quote-feature {
+        margin-top: 30px;
+      }
+    }
+    .section-regenerative {
+      margin: 0 0 30px;
+      .definitions {
+        margin-top: 30px;
+      }
+    }
+    .section-experience {
+      margin: 0 0 30px;
+    }
+    .legacy {
+      padding: 30px 15px 0;
+      margin-top: 0;
+      text-align: left;
+      .legacy-logos {
+        margin-top: 30px;
+        text-align: center;
+        img {
+          max-width: 100%;
+          margin: 0 0 15px;
+        }
+      }
+    }
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {
+
+  .page-template-template-about {
+    .section-regenerative {
+      .section-billboard {
+        padding: 150px 30px;
+        margin: 0 0 30px;
+      }
+    }
+    .section-experience {
+      .section-billboard {
+        padding: 150px 30px;
+        margin: 0 0 30px;
+      }
+    }
+  }
+
+}

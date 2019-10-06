@@ -1,0 +1,54 @@
+// statement.scss
+// -----------------------------------------------------------------
+
+.statement {
+  font-size: 27px;
+  margin-top: 45px;
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .statement {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+
+}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .img-watercolor {
+    width: 250px;
+    margin: 0 auto 30px;
+  }
+  .statement {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {
+
+  .img-watercolor {
+    width: 200px;
+    margin: 0 auto 30px;
+  }
+  .statement {
+    font-size: 21px;
+  }
+
+}

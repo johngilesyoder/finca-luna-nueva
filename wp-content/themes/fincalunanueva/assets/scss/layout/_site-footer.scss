@@ -1,0 +1,294 @@
+// site-footer.scss
+// -----------------------------------------------------------------
+
+.site-footer {
+  color: #897F70;
+  background: #2B251A;
+  background-image: url('assets/img/footer-bg.png');
+  background-size: 672px;
+  a {
+    color: #fff;
+  }
+  .footer-certifications {
+    background: #2B251A;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    background-color: #403627;
+    background-image: url('assets/img/footer-bg.png');
+    background-size: 672px;
+    .certifications {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    a {
+      display: inline-block;
+      width: 16%;
+      text-align: center;
+      img {
+        height: 75px;
+      }
+    }
+  }
+  .footer-links {
+    margin-bottom: 30px;
+    .footer-mailchimp {
+      .mailchimp-content {
+        @include clearfix();
+        img {
+          float: left;
+          margin-right: 15px;
+          height: 16px;
+          margin-bottom: 10px;
+          position: relative;
+          top: 5px;
+        }
+        p {
+          color: #fff;
+          font-size: 14px;
+          font-family: $font-family-sans-serif;
+        }
+      }
+      input[type="email"] {
+        font-family: $font-family-sans-serif;
+        font-size: 16px;
+        background: rgba(0,0,0,.3);
+        border-color: transparent;
+        margin: 0 0 10px;
+        color: #fff;
+      }
+      .btn {
+        font-size: 13px;
+        width: 100%;
+      }
+    }
+    .logo-mark {
+      width: 137px;
+      margin: 0 auto;
+    }
+    .columns-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .links-column {
+      width: 25%;
+
+    }
+    nav {
+      h4 {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+          margin: 0 0 5px;
+          &:last-child {
+            margin: 0;
+          }
+          a {
+            font-size: 14px;
+            display: block;
+            line-height: 1.5em;
+          }
+        }
+      }
+    }
+  }
+  .footer-company {
+    border-top: 1px solid #575047;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-family: $font-family-sans-serif;
+    .copyright {
+      font-size: 14px;
+    }
+    .footer-connect {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-align: right;
+      a {
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .footer-language {
+    text-align: center;
+    color: #fff;
+    margin: 0 0 50px;
+    .prisna-gwt-flags-container {
+      .prisna-gwt-flag-container {
+        margin-right: 5px !important;
+      }
+    }
+    select {
+      color: $text-color;
+    }
+    .goog-te-gadget,
+    .goog-logo-link {
+      color: #fff;
+    }
+  }
+}
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .site-footer {
+    .footer-links {
+      .footer-mailchimp {
+        margin: 50px 0 0;
+        .mailchimp-content {
+          img {
+            top: 0;
+          }
+        }
+        .btn {
+          width: 250px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .site-footer {
+    .footer-certifications {
+      a {
+        img {
+          height: 60px;
+        }
+      }
+    }
+    .footer-links {
+      .footer-mailchimp {
+        margin: 50px 0 0;
+        .mailchimp-content {
+          img {
+            top: 0;
+          }
+        }
+        .btn {
+          width: 250px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .site-footer {
+    .footer-certifications {
+      margin-bottom: 50px;
+      padding: 50px 0 20px;
+      a {
+        width: 31%;
+        margin: 0 0 30px;
+        img {
+          height: 60px;
+        }
+      }
+    }
+    .footer-links {
+      margin-bottom: 50px;
+      .links-column {
+        width: 50%;
+        margin: 0 0 30px;
+        text-align: center;
+      }
+      .footer-mailchimp {
+        margin: 50px 0 0;
+        text-align: center;
+        .mailchimp-content {
+          img {
+            top: 0;
+            float: none;
+            display: inline-block;
+          }
+        }
+        input[type="email"] {
+          width: 400px;
+          margin: 0 auto 15px;
+        }
+        .btn {
+          width: 400px;
+          font-size: 16px;
+        }
+      }
+    }
+    .footer-company {
+      padding-top: 50px;
+      .copyright {
+        text-align: center;
+        margin: 0 0 50px;
+      }
+      .footer-connect {
+        text-align: center;
+      }
+    }
+    .footer-language {
+      margin: 50px 0;
+    }
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {
+
+  .site-footer {
+    .footer-certifications {
+      margin-bottom: 30px;
+      padding: 30px 0 0;
+      a {
+        width: 48%;
+        margin: 0 0 30px;
+      }
+    }
+    .footer-links {
+      .links-column {
+        width: 100%;
+      }
+      .footer-mailchimp {
+        margin: 30px 0 0;
+        .mailchimp-content {
+        }
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+    .footer-company {
+      padding-top: 30px;
+      .copyright {
+        margin: 0 0 30px;
+      }
+    }
+  }
+
+}

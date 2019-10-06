@@ -1,0 +1,161 @@
+// summary.scss
+// -----------------------------------------------------------------
+
+.home-summary {
+  margin-bottom: 80px;
+}
+.tripadvisor-badges {
+  background-image: url('assets/img/dotted-bg-dark.svg');
+  background-repeat: repeat-x;
+  position: relative;
+  margin-top: 30px;
+  padding-top: 40px;
+  h3 {
+    background-image: url('assets/img/bg-noise.png');
+    padding: 0 15px;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 0 0 0 -120px;
+  }
+  .widgets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 60px;
+    flex-flow: row wrap;
+    @media (max-width: 767px) {
+      margin: 0 0 30px;
+    }
+    .widget {
+      flex: 1;
+      flex-shrink: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      @media (min-width: 768px) and (max-width: 991px) {
+        flex: auto;
+        width: 50%;
+        margin: 0 0 30px;
+      }
+      @media (max-width: 767px) {
+        flex: auto;
+        width: 50%;
+        margin: 0 0 30px;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+    }
+  }
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 0 60px;
+    .tripadvisor-badge {
+      text-align: center;
+    }
+  }
+  .more-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > * {
+      text-align: center;
+      padding: 0 30px;
+    }
+    #hc-ratingRatingHotel {
+      margin: 0;
+    }
+    .zicasso-badge {
+      display: inline-block;
+      img {
+        height: 126px;
+      }
+    }
+  }
+}
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .home-summary {
+    margin-bottom: 30px;
+  }
+  .tripadvisor-badges {
+    .badges {
+      margin: 0 0 30px;
+      .tripadvisor-badge {
+        width: 33%;
+        margin: 0 0 50px;
+      }
+    }
+  }
+
+}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .home-summary {
+    margin-bottom: 0;
+  }
+  .tripadvisor-badges {
+    margin-bottom: 30px;
+    .badges {
+      margin: 0 0 30px;
+      .tripadvisor-badge {
+        width: 50%;
+        margin: 0 0 50px;
+        &:last-child {
+          margin: 0 0 10px;
+        }
+      }
+    }
+    .more-badges {
+      flex-flow: row wrap;
+      & > * {
+        padding: 15px;
+        width: 100%;
+      }
+      #hc-ratingRatingHotel {
+        margin: 0 auto;
+      }
+      .zicasso-badge {
+        display: inline-block;
+        img {
+          height: 100px;
+        }
+      }
+    }
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {
+
+  .tripadvisor-badges {
+    .badges {
+      margin: 0 0 15px;
+      .tripadvisor-badge {
+        width: 100%;
+        margin: 0 0 30px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,127 @@
+// accommodation.scss
+// -----------------------------------------------------------------
+
+.home-accommodation {
+  background-color: #403627;
+  background-image: url('assets/img/footer-bg.png');
+  background-size: 672px;
+  color: #fff;
+  color: rgba(255,255,255,.85);
+  border-bottom: 7px solid #2B251A;
+  border-top: 7px solid #2B251A;
+  h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    margin: 0 0 30px;
+    color: #fff;
+  }
+  p {
+    font-size: 24px;
+  }
+  .home-suites {
+    margin: 30px 0 60px;
+    .suite {
+      background: rgba(0,0,0,.15);
+      border-radius: 6px;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      transition: 150ms background;
+      &:hover {
+        background: rgba(0,0,0,.25);
+      }
+      .suite-photo {
+        height: 200px;
+        background-size: cover;
+        background-position: 50% 50%;
+        margin: 0 0 25px;
+      }
+      h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 0 0 10px;
+        letter-spacing: 2px;
+        color: #fff;
+      }
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        color: rgba(255,255,255,.85);
+      }
+      .btn {
+        width: 100%;
+        transition: 150ms background;
+      }
+      &:hover {
+        .btn {
+          background-color: #e53419;
+          border-color: #c52d15;
+        }
+      }
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .home-accommodation {
+    .home-suites {
+      margin-bottom: 0;
+      .suite {
+        margin: 0 0 30px;
+      }
+    }
+  }
+
+}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .home-accommodation {
+    .home-suites {
+      margin-bottom: 0;
+      .suite {
+        margin: 0 0 30px;
+      }
+    }
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {
+
+  .home-accommodation {
+    .section-billboard {
+      margin: 0 0 15px;
+      h2 {
+        font-size: 24px;
+      }
+    }
+    p {
+      font-size: 21px;
+      margin: 0 0 30px;
+    }
+    .home-suites {
+      display: none;
+      // .col-xs-6 {
+      //   width: 100%;
+      // }
+    }
+  }
+
+}

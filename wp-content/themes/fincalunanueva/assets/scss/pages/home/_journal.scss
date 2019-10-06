@@ -1,0 +1,70 @@
+// journal.scss
+// -----------------------------------------------------------------
+
+.home-journal {
+  background-image: url('assets/img/dotted-bg-dark.svg');
+  background-repeat: repeat-x;
+  padding: 60px 0 0;
+  margin: 0 0 60px;
+  .journal-title {
+    text-align: center;
+    margin: 0 0 60px;
+    h2 {
+      font-size: 52px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      font-family: $font-family-display;
+      margin: 0 0 15px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .home-journal {
+    padding: 40px 0 0;
+    margin: 0;
+    .journal-title {
+      margin: 0 0 30px;
+      h2 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 21px;
+      }
+    }
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {
+
+  .home-journal {
+    padding: 30px 0 30px;
+    .journal-title {
+      h2 {
+        font-size: 30px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+}

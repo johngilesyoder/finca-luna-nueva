@@ -1,0 +1,93 @@
+// journal.scss
+// -----------------------------------------------------------------
+
+.tile-posts {
+  .tile-post {
+    margin: 0 0 60px;
+    .post-thumbnail {
+      display: block;
+      background-size: cover;
+      background-position: 50% 50%;
+      height: 200px;
+      margin: 0 0 15px;
+    }
+    .post-date {
+      font-size: 14px;
+      font-style: italic;
+      display: block;
+      width: 15%;
+      float: left;
+    }
+    .post-title {
+      color: $text-color;
+      font-family: $font-family-sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      font-weight: 700;
+      width: 85%;
+      float: left;
+      border-left: 2px solid #D8D8D8;
+      padding-left: 10px;
+      margin: 0;
+      a {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .tile-posts {
+    .tile-post {
+      margin: 0;
+      .post-date {
+        width: 100%;
+        float: none;
+      }
+      .post-title {
+        width: 100%;
+        float: none;
+        border: 0;
+        padding: 0;
+      }
+    }
+  }
+
+}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .tile-posts {
+    .tile-post {
+      margin: 0 0 50px;
+      .post-date {
+        width: 100%;
+        float: none;
+      }
+      .post-title {
+        width: 100%;
+        float: none;
+        border: 0;
+        padding: 0;
+      }
+    }
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {}
