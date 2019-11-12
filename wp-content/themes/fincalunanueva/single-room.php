@@ -13,7 +13,7 @@
       			</div>
 
             <div class="room-rates">
-              <h4><?php the_title(); ?> Rates <small>(2019/2020)</small></h4>
+              <h4><?php the_title(); ?> Rates <!--<small>(2019/2020)</small>--></h4>
               <?php if( have_rows('room_rates') ): ?>
 
                 <div class="table-responsive">
