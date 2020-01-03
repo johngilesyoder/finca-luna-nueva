@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+  get_header(); 
+  $customNotes = get_field('custom_room_notes');
+?>
+
 <main role="main">
   <div class="container">
 		<div class="row">
@@ -62,19 +66,34 @@
                 <div class="col-md-5">
                   <div class="season-dates">
                     <h4>Season dates</h4>
-                    <?php the_field('season_dates', 'option'); ?>
+                    <?php if( $customNotes && in_array('yes', $customNotes) ) {
+                        the_field('custom_season_dates');
+                      } else {
+                        the_field('season_dates', 'option');
+                      }
+                    ?>
                   </div>
                 </div>
                 <div class="col-md-7">
                   <div class="rates-include">
                     <h4>Rates include</h4>
-                    <?php the_field('rates_include', 'option'); ?>
+                    <?php if( $customNotes && in_array('yes', $customNotes) ) {
+                        the_field('custom_rates_include');
+                      } else {
+                        the_field('rates_include', 'option');
+                      }
+                    ?>
                   </div>
                 </div>
               </div>
               <div class="important-notes">
                 <h4>Important notes</h4>
-                <?php the_field('important_notes', 'option'); ?>
+                <?php if( $customNotes && in_array('yes', $customNotes) ) {
+                    the_field('custom_important_notes');
+                  } else {
+                    the_field('important_notes', 'option');
+                  }
+                ?>
               </div>
             </div>
 
