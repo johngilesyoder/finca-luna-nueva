@@ -14,7 +14,7 @@
     <div class="row">
       <div class="col-sm-3">
         <img class="img-watercolor img-responsive" src="<?php echo $biodynamic_image['url']; ?>" alt="">
-        <img class="demeter-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-demeter-dark.png" alt="">
+        <!-- <img class="demeter-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-demeter-dark.png" alt=""> -->
       </div>
       <div class="col-sm-9">
         <div class="statement">
