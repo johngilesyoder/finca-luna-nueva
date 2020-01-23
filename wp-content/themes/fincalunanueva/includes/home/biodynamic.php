@@ -8,7 +8,7 @@
 
 <section class="home-biodynamic">
   <div class="section-billboard crop-green" style="background-image: url('<?php echo $biodynamic_section_title_bg['url']; ?>');">
-    <h2>Biodynamic &amp; Diverse</h2>
+    <h2>Regenerative &amp; Diverse</h2>
   </div>
   <div class="container">
     <div class="row">
