@@ -128,7 +128,7 @@
           <h4 class="modal-title" id="myModalLabel">Soilidarity Newsletter</h4>
         </div>
         <div class="modal-body">
-          <p>Subscribe to our newsletter <strong><em>Soilidarity</em></strong>, a once-monthly publication to unite us in the regeneration of our planet!</p>
+          <p>Like to unite with us in the regeneration of our planet? Subscribe to our newsletter <strong><em>Soilidarity</em></strong>, a once-monthly publication bringing you the latest news from our regenerative farm and Eco-lodge in the heart of the rainforest... its the next best thing to being here.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">No, thank you</button>
