@@ -1,0 +1,1 @@
+!function(t,i,n){t((function(){"use strict";setTimeout((function(){t("#signupModal").modal()}),5e3)}))}(jQuery,this);

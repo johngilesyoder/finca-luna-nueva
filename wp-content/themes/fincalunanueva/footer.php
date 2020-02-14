@@ -21,7 +21,7 @@
         <div class="container">
           <div class="footer-links">
             <div class="row">
-              <div class="col-lg-9">
+              <div class="col-lg-12">
                 <div class="columns-wrapper">
                   <nav class="links-column">
                     <?php footer_menu_1(); ?>
@@ -37,9 +37,9 @@
                   </nav>
                 </div>
               </div>
-              <div class="col-lg-3 footer-mailchimp">
-                <?php get_template_part( 'includes/mailchimp' ); ?>
-              </div>
+              <!-- <div class="col-lg-3 footer-mailchimp"> -->
+                <?php // get_template_part( 'includes/mailchimp' ); ?>
+              <!-- </div> -->
             </div>
           </div>
           <div class="footer-company">

@@ -119,4 +119,23 @@
 
   </main>
 
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Soilidarity Newsletter</h4>
+        </div>
+        <div class="modal-body">
+          <p>Subscribe to our newsletter <strong><em>Soilidarity</em></strong>, a once-monthly publication to unite us in the regeneration of our planet!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">No, thank you</button>
+          <a href="http://eepurl.com/gLMFHP" target="_blank" class="btn btn-primary">Sign me up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <?php get_footer(); ?>

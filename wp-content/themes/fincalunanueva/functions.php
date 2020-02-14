@@ -127,6 +127,13 @@ function html5blank_conditional_scripts() {
 
   }
 
+  if (is_page_template( 'template-about.php' )) {
+
+    wp_register_script('sign-up', get_template_directory_uri() . '/assets/js/sections/min/signup-modal-min.js', array(), null, true); // Sign up script
+    wp_enqueue_script('sign-up'); // Enqueue it!
+
+  }
+
 }
 
 // Load styles

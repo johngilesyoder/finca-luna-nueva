@@ -11,5 +11,13 @@
         <p class="retreats">Are you an educator or business interested in our Workshops and Retreats? <a href="/accommodations/workshops-retreats">Find out more &rarr;</a></p>
       </div>
     </div>
+    <div class="signup-callout">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <p>Subscribe to our newsletter <strong><em>Soilidarity</em></strong>, a once-monthly publication to unite us in the regeneration of our planet!</p>
+          <a href="http://eepurl.com/gLMFHP" target="_blank" class="btn btn-primary">Sign me up</a>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
