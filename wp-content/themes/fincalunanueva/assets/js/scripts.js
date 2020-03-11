@@ -4,7 +4,10 @@
 		
 		'use strict';
 		
-		// DOM ready, take it away
+    // DOM ready, take it away
+    setTimeout(function() {
+      $('#covidModal').modal();
+    }, 5000);
 
 	});
 	
