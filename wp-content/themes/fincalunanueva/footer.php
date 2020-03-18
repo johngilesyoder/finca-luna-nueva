@@ -67,26 +67,6 @@
         </div>
 			</footer>
 
-      <!-- Modal -->
-      <div class="modal fade" id="covidModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Message to our guests on Coronavirus Covid-19</h4>
-            </div>
-            <div class="modal-body">
-              <p>Dear Guest,</p>
-              <p>For Finca Luna Nueva Lodge, it is very important to provide a clean and safe environment for all of you while you are on vacation relaxing in the rainforest. Please see our remarks and advice on the topic <a href="https://fincalunanuevalodge.com/message-to-our-guests-on-coronavirus-covid-19/">here</a>.</p>
-              <p>We look forward to your visit, and want to let you know that the rainforest is still beautiful and peaceful. PURA VIDA!</p>
-            </div>
-            <div class="modal-footer">
-              <a href="https://fincalunanuevalodge.com/message-to-our-guests-on-coronavirus-covid-19/" target="_blank" class="btn btn-primary">View our update and advice</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
 		<?php wp_footer(); ?>
 
 	</body>
