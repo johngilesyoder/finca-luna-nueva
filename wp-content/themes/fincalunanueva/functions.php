@@ -115,7 +115,7 @@ function html5blank_header_scripts() {
 function html5blank_conditional_scripts() {
   if (is_front_page()) {
 
-    wp_register_script('home', get_template_directory_uri() . '/assets/js/sections/min/home-min.js', array(), '1.1.1', true); // Home scripts
+    wp_register_script('home', get_template_directory_uri() . '/assets/js/sections/min/home-min.js', array(), '1.1.2', true); // Home scripts
     wp_enqueue_script('home'); // Enqueue it!
 
   }
