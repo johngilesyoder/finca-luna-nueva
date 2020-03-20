@@ -26,6 +26,9 @@
     justify-content: center;
     img {
       max-width: 423px;
+      @media (max-width: 480px) {
+        max-width: 100%;
+      }
     }
   }
   .widgets {

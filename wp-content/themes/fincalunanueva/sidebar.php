@@ -19,12 +19,8 @@
   <!-- Tripadvisor -->
   <div class="sidebar-tripadvisor">
     <h3>Finca on Tripadvisor</h3>
-    <div class="badges">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tripadvisor-1.svg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tripadvisor-2.svg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tripadvisor-3.svg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tripadvisor-4.svg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tripadvisor-5.svg" alt="">
+    <div class="tripadvisor-award">
+      <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g309226-d1014002-Reviews-Finca_Luna_Nueva_Lodge-La_Fortuna_de_San_Carlos_Arenal_Volcano_National_Park_Province_.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tripadvisor-award.png" alt=""></a>
     </div>
   </div>
   <!-- Detecta Hotel Rating -->
