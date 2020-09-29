@@ -19,7 +19,4 @@
       </div>
     </div>
   </section>
-  <section class="insta-feed">
-    <?php echo do_shortcode( '[instagram feed="2276"]' ); ?>
-  </section>
 </div>
