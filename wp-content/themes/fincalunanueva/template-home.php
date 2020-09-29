@@ -30,6 +30,10 @@
     <!-- =================================== -->
     <?php get_template_part( 'includes/home/journal' ); ?>
 
+    <!-- Instagram -->
+    <!-- =================================== -->
+    <?php get_template_part( 'includes/home/instagram' ); ?>
+
   </main>
 
 <?php get_footer(); ?>
