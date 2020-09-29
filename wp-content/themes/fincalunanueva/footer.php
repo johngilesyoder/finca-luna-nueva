@@ -8,7 +8,7 @@
         <div class="footer-certifications">
           <div class="container">
             <div class="certifications">
-			  <a href="#"><img src="https://fincalunanuevalodge.com/wp-content/uploads/2019/09/regenerative-resorts.png" alt="Regenerative Resorts" /></a>
+			        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/rtlogo-beige.png" alt="Regenerative Resorts" /></a>
               <!-- <a href="http://www.demeter-usa.org" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/certification-demeter.png" alt="Demeter Certified Biodynamic"></a> -->
               <a href="http://www.turismo-sostenible.co.cr" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/certification-turismo.png" alt="Turismo Sostenible"></a>
               <a href="http://www.ict.go.cr/es/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/certification-ict.png" alt="ICT"></a>
