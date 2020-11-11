@@ -108,6 +108,9 @@ function html5blank_header_scripts() {
     wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/lib/bootstrap.min.js', array(), null, false);
     wp_enqueue_script('bootstrap'); // Enqueue it!
 
+    wp_register_script('slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array(), null, false);
+    wp_enqueue_script('slick'); // Enqueue it!
+
   }
 }
 

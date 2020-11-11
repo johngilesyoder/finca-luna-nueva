@@ -4,15 +4,28 @@
 .home-hero {
   height: 100vh;
   background-color: #333;
-  background-image: url('assets/img/home-hero-bg.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
   border-bottom: 7px solid #000;
   margin: 0 0 30px;
   position: relative;
   @extend .vertical-center-parent;
+  .hero-backgrounds {
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .hero-background {
+      height: 100vh;
+      background-size: cover;
+    background-position: 50% 50%;
+    }
+  }
   .hero-content-wrapper {
     text-align: center;
+    position: relative;
+    z-index: 20;
     @extend .vertical-center;
     .hero-content {
       text-align: center;
@@ -21,6 +34,7 @@
       margin: 0 auto;
       background: rgba(81,95,127,.05);
       box-shadow: 0 0 20px rgba(81,95,127,.08);
+      text-shadow: 0 1px 15px rgba(0,0,0,.95);
       h2 {
         margin: 0 0 30px;
         font-size: 52px;
@@ -85,6 +99,12 @@
 
   .home-hero {
     height: 550px;
+    .hero-backgrounds {
+      height: 550px;
+      .hero-background {
+        height: 550px;
+      }
+    }
     .hero-content-wrapper {
       padding: 0 30px;
       .hero-content {
@@ -108,6 +128,12 @@
 
   .home-hero {
     height: 500px;
+    .hero-backgrounds {
+      height: 500px;
+      .hero-background {
+        height: 500px;
+      }
+    }
     .hero-content-wrapper {
       .hero-content {
         h2 {

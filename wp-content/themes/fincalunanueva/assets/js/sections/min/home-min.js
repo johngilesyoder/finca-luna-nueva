@@ -1,1 +1,1 @@
-!function(t,i,o){t((function(){"use strict";setTimeout((function(){t("#covidModal").modal()}),5e3)}))}(jQuery,this);
+!function(e,s,n){e((function(){"use strict";e(document).ready((function(){e(".hero-backgrounds").slick({dots:!1,infinite:!0,speed:500,fade:!0,cssEase:"linear",autoplay:!0,autoplaySpeed:5e3,pauseOnFocus:!1,pauseOnHover:!1,arrows:!1})}))}))}(jQuery,this);

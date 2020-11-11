@@ -22,6 +22,10 @@ Tags:
 @import "utilities/wordpress-core";
 @import "utilities/z-index";
 
+// Vendor
+@import "vendor/slick";
+@import "vendor/slick-theme";
+
 // Components
 @import "components/blog-sidebar";
 @import "components/callout-footer";
@@ -60,5 +64,3 @@ Tags:
 @import "pages/single";
 @import "pages/tour";
 @import "pages/tours";
-
-// Vendor
