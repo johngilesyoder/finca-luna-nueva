@@ -3,7 +3,7 @@
 
 .home-hero {
   height: 100vh;
-  background-color: #333;
+  background-color: #111;
   border-bottom: 7px solid #000;
   margin: 0 0 30px;
   position: relative;
@@ -19,7 +19,8 @@
     .hero-background {
       height: 100vh;
       background-size: cover;
-    background-position: 50% 50%;
+      background-position: 50% 50%;
+      opacity: .8
     }
   }
   .hero-content-wrapper {
