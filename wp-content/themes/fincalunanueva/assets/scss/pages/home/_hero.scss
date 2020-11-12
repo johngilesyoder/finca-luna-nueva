@@ -129,21 +129,34 @@
 @media (max-width: 480px) {
 
   .home-hero {
-    height: 500px;
+    height: auto;
+    border: 0;
     .hero-backgrounds {
-      height: 500px;
+      height: 400px;
+      opacity: 1;
+      position: static;
       .hero-background {
-        height: 500px;
+        height: 400px;
       }
     }
     .hero-content-wrapper {
+      position: static;
+      transform: none;
+      padding: 0;
+      background: $green;
       .hero-content {
+        background: transparent;
+        padding: 15px;
+        text-shadow: none;
         h2 {
           font-size: 30px;
           letter-spacing: 1px;
+          &:after {
+            margin-top: 15px;
+          }
         }
         p {
-
+          margin: 0;
         }
       }
     }
